@@ -159,7 +159,6 @@ public class MainPanel extends JMiddleContentPanel {
         btnPlay.setBounds(770, 20, 80, 30);
 
         cbSpeakerList.setBackground(java.awt.Color.white);
-        cbSpeakerList.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         plTool.add(cbSpeakerList);
         cbSpeakerList.setBounds(530, 40, 130, 29);
 
@@ -257,6 +256,8 @@ public class MainPanel extends JMiddleContentPanel {
                 }
 
             }).start();
+            
+            JOptionPane.showMessageDialog(null, "正在导出到OGG文件，请稍等！");
         } catch (Exception ex) {
             Logger.getLogger(MainPanel.class.getName()).log(Level.SEVERE, null, ex);
         }

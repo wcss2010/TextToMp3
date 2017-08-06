@@ -57,6 +57,8 @@ public class TextToMp3 {
                     //添加首页(标签页)
                     jtf.setTabPage(0, "   首页", JImagePanel.getImageIconObjFromResource("/texttomp3/UIImage/manager.png"), new MainPanel());
 
+                    jtf.setSize(880,660);
+                    jtf.Init();
                     jtf.setVisible(true);
 
                     //显示首页
